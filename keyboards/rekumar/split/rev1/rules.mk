@@ -1,0 +1,3 @@
+SRC += trackpad.c
+CONSOLE_ENABLE = no
+POINTING_DEVICE_ENABLE = yes

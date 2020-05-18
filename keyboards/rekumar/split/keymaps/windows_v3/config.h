@@ -22,13 +22,22 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
  // place overrides here
 
-/* Use I2C or Serial, not both */
-#define USE_SERIAL
+
+
+/* tapping */
 #define TAP_CODE_DELAY 20
-// #define USE_I2C
+// #define RETRO_TAPPING
+#define PERMISSIVE_HOLD
+
+
+/* auto shifting */
+#define NO_AUTO_SHIFT_SPECIAL
+#define NO_AUTO_SHIFT_NUMERIC
+#define AUTO_SHIFT_TIMEOUT 125
 
 /* Select hand configuration */
 // #define MASTER_RIGHT
 // #define MASTER_RIGHT
 #define EE_HANDS
+#define USE_SERIAL
 

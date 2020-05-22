@@ -185,7 +185,7 @@ void pointing_device_task(void){
       report_mouse_t currentReport = pointing_device_get_report();
       if (isScrollMode)
       {
-        currentReport.h = dx * SCROLL_SPEED_MULTIPLIER;
+        currentReport.h = -dx * SCROLL_SPEED_MULTIPLIER;
         currentReport.v = dy * SCROLL_SPEED_MULTIPLIER;
         if (touchData.buttons & (1<<0)){
           currentReport.buttons |= MOUSE_BTN2;

@@ -175,7 +175,7 @@ void pointing_device_task(void){
       dx = touchData.xDelta;
       dy = -touchData.yDelta;
 
-      if (IS_LAYER_ON(5)){ //pretty ghetto, need to link to keymap.c. had compile issues though
+      if (IS_LAYER_ON(3)){ //pretty ghetto, need to link to keymap.c. had compile issues though
         isScrollMode = true;
       }else{
         isScrollMode = false;
